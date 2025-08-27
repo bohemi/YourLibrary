@@ -40,3 +40,28 @@ input{
 ::backdrop{
     backdrop-filter: blur(5px);
 }
+/* Dom section */
+#bookContainer{
+    display: inline-grid;
+    margin: 5px;
+    grid-template-columns: 1fr .5fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: lightcoral;
+}
+#bookContainer #readCheckbox{
+    margin: 0 auto 0 0;
+    width: 25px;
+}
+#bookContainer label{
+    font-weight: bold;
+}
+#bookContainer h2, p, label{
+    background-color: lightcoral;
+}
+#bookContainer button{
+    width: 100px;
+    grid-column: 2 / 3;
+    text-align: center;
+}
